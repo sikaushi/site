@@ -241,3 +241,11 @@ time_series_attributes:
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
+#entries for SDMX
+data_schema:
+    class: DataSchemaInputSdmxDsd
+    source: 'https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/IAEG-SDGs/SDG/latest/?format=sdmx-2.1&detail=full&references=children'
+    
+docs_extra_disaggregations:
+  - Series
+  - Units
