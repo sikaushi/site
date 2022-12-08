@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20221130225010">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20221208153135">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -400,8 +400,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2></h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -414,29 +433,361 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_8-10-2'
   data-id="8-10-2"
-  data-country="Australia"
+  data-country="World Bank"
   data-charttitle="Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap="false"
+  data-showmap="true"
   data-startvalues="[]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Año&quot;},{&quot;name&quot;:&quot;SeriesID&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1558&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SeriesID&quot;},{&quot;name&quot;:&quot;SeriesDescription&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of adults (15 years and older) with an account at a financial institution or mobile-money-service provider, by sex (% of adults aged 15 years and older)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SeriesDescription&quot;},{&quot;name&quot;:&quot;GeoAreaCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;4.0&quot;,&quot;8.0&quot;,&quot;12.0&quot;,&quot;24.0&quot;,&quot;32.0&quot;,&quot;51.0&quot;,&quot;36.0&quot;,&quot;40.0&quot;,&quot;31.0&quot;,&quot;48.0&quot;,&quot;50.0&quot;,&quot;112.0&quot;,&quot;56.0&quot;,&quot;84.0&quot;,&quot;204.0&quot;,&quot;64.0&quot;,&quot;68.0&quot;,&quot;70.0&quot;,&quot;72.0&quot;,&quot;76.0&quot;,&quot;100.0&quot;,&quot;854.0&quot;,&quot;108.0&quot;,&quot;116.0&quot;,&quot;120.0&quot;,&quot;124.0&quot;,&quot;140.0&quot;,&quot;148.0&quot;,&quot;152.0&quot;,&quot;156.0&quot;,&quot;170.0&quot;,&quot;174.0&quot;,&quot;180.0&quot;,&quot;178.0&quot;,&quot;188.0&quot;,&quot;384.0&quot;,&quot;191.0&quot;,&quot;196.0&quot;,&quot;203.0&quot;,&quot;208.0&quot;,&quot;262.0&quot;,&quot;214.0&quot;,&quot;218.0&quot;,&quot;818.0&quot;,&quot;222.0&quot;,&quot;233.0&quot;,&quot;231.0&quot;,&quot;246.0&quot;,&quot;250.0&quot;,&quot;266.0&quot;,&quot;270.0&quot;,&quot;268.0&quot;,&quot;276.0&quot;,&quot;288.0&quot;,&quot;300.0&quot;,&quot;320.0&quot;,&quot;324.0&quot;,&quot;332.0&quot;,&quot;340.0&quot;,&quot;344.0&quot;,&quot;348.0&quot;,&quot;352.0&quot;,&quot;356.0&quot;,&quot;360.0&quot;,&quot;364.0&quot;,&quot;368.0&quot;,&quot;372.0&quot;,&quot;376.0&quot;,&quot;380.0&quot;,&quot;388.0&quot;,&quot;392.0&quot;,&quot;400.0&quot;,&quot;398.0&quot;,&quot;404.0&quot;,&quot;410.0&quot;,&quot;412.0&quot;,&quot;414.0&quot;,&quot;417.0&quot;,&quot;418.0&quot;,&quot;428.0&quot;,&quot;422.0&quot;,&quot;426.0&quot;,&quot;430.0&quot;,&quot;434.0&quot;,&quot;440.0&quot;,&quot;442.0&quot;,&quot;450.0&quot;,&quot;454.0&quot;,&quot;458.0&quot;,&quot;462.0&quot;,&quot;466.0&quot;,&quot;470.0&quot;,&quot;478.0&quot;,&quot;480.0&quot;,&quot;484.0&quot;,&quot;498.0&quot;,&quot;496.0&quot;,&quot;499.0&quot;,&quot;504.0&quot;,&quot;508.0&quot;,&quot;104.0&quot;,&quot;516.0&quot;,&quot;524.0&quot;,&quot;528.0&quot;,&quot;554.0&quot;,&quot;558.0&quot;,&quot;562.0&quot;,&quot;566.0&quot;,&quot;807.0&quot;,&quot;578.0&quot;,&quot;512.0&quot;,&quot;586.0&quot;,&quot;591.0&quot;,&quot;600.0&quot;,&quot;604.0&quot;,&quot;608.0&quot;,&quot;616.0&quot;,&quot;620.0&quot;,&quot;630.0&quot;,&quot;634.0&quot;,&quot;642.0&quot;,&quot;643.0&quot;,&quot;646.0&quot;,&quot;682.0&quot;,&quot;686.0&quot;,&quot;688.0&quot;,&quot;694.0&quot;,&quot;702.0&quot;,&quot;703.0&quot;,&quot;705.0&quot;,&quot;706.0&quot;,&quot;710.0&quot;,&quot;728.0&quot;,&quot;724.0&quot;,&quot;144.0&quot;,&quot;729.0&quot;,&quot;748.0&quot;,&quot;752.0&quot;,&quot;756.0&quot;,&quot;760.0&quot;,&quot;762.0&quot;,&quot;834.0&quot;,&quot;764.0&quot;,&quot;768.0&quot;,&quot;780.0&quot;,&quot;788.0&quot;,&quot;792.0&quot;,&quot;795.0&quot;,&quot;800.0&quot;,&quot;804.0&quot;,&quot;784.0&quot;,&quot;826.0&quot;,&quot;840.0&quot;,&quot;858.0&quot;,&quot;860.0&quot;,&quot;862.0&quot;,&quot;704.0&quot;,&quot;275.0&quot;,&quot;887.0&quot;,&quot;894.0&quot;,&quot;716.0&quot;,&quot;35.0&quot;,&quot;30.0&quot;,&quot;722.0&quot;,&quot;199.0&quot;,&quot;432.0&quot;,&quot;53.0&quot;,&quot;753.0&quot;,&quot;9.0&quot;,&quot;202.0&quot;,&quot;747.0&quot;,&quot;145.0&quot;,&quot;15.0&quot;,&quot;34.0&quot;,&quot;143.0&quot;,&quot;419.0&quot;,&quot;150.0&quot;,&quot;21.0&quot;,&quot;513.0&quot;,&quot;515.0&quot;,&quot;1.0&quot;,&quot;&quot;]},&quot;title&quot;:&quot;GeoAreaCode&quot;},{&quot;name&quot;:&quot;GeoAreaName&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Afghanistan&quot;,&quot;Albania&quot;,&quot;Algeria&quot;,&quot;Angola&quot;,&quot;Argentina&quot;,&quot;Armenia&quot;,&quot;Australia&quot;,&quot;Austria&quot;,&quot;Azerbaijan&quot;,&quot;Bahrain&quot;,&quot;Bangladesh&quot;,&quot;Belarus&quot;,&quot;Belgium&quot;,&quot;Belize&quot;,&quot;Benin&quot;,&quot;Bhutan&quot;,&quot;Bolivia&quot;,&quot;Bosnia and Herzegovina&quot;,&quot;Botswana&quot;,&quot;Brazil&quot;,&quot;Bulgaria&quot;,&quot;Burkina Faso&quot;,&quot;Burundi&quot;,&quot;Cambodia&quot;,&quot;Cameroon&quot;,&quot;Canada&quot;,&quot;Central African Republic&quot;,&quot;Chad&quot;,&quot;Chile&quot;,&quot;China&quot;,&quot;Colombia&quot;,&quot;Comoros&quot;,&quot;Congo, Dem. Rep.&quot;,&quot;Congo, Rep.&quot;,&quot;Costa Rica&quot;,&quot;Cote d'Ivoire&quot;,&quot;Croatia&quot;,&quot;Cyprus&quot;,&quot;Czech Republic&quot;,&quot;Denmark&quot;,&quot;Djibouti&quot;,&quot;Dominican Republic&quot;,&quot;Ecuador&quot;,&quot;Egypt, Arab Rep.&quot;,&quot;El Salvador&quot;,&quot;Estonia&quot;,&quot;Ethiopia&quot;,&quot;Finland&quot;,&quot;France&quot;,&quot;Gabon&quot;,&quot;Gambia, The&quot;,&quot;Georgia&quot;,&quot;Germany&quot;,&quot;Ghana&quot;,&quot;Greece&quot;,&quot;Guatemala&quot;,&quot;Guinea&quot;,&quot;Haiti&quot;,&quot;Honduras&quot;,&quot;Hong Kong SAR, China&quot;,&quot;Hungary&quot;,&quot;Iceland&quot;,&quot;India&quot;,&quot;Indonesia&quot;,&quot;Iran, Islamic Rep.&quot;,&quot;Iraq&quot;,&quot;Ireland&quot;,&quot;Israel&quot;,&quot;Italy&quot;,&quot;Jamaica&quot;,&quot;Japan&quot;,&quot;Jordan&quot;,&quot;Kazakhstan&quot;,&quot;Kenya&quot;,&quot;Korea, Rep.&quot;,&quot;Kosovo&quot;,&quot;Kuwait&quot;,&quot;Kyrgyz Republic&quot;,&quot;Lao PDR&quot;,&quot;Latvia&quot;,&quot;Lebanon&quot;,&quot;Lesotho&quot;,&quot;Liberia&quot;,&quot;Libya&quot;,&quot;Lithuania&quot;,&quot;Luxembourg&quot;,&quot;Madagascar&quot;,&quot;Malawi&quot;,&quot;Malaysia&quot;,&quot;Maldives&quot;,&quot;Mali&quot;,&quot;Malta&quot;,&quot;Mauritania&quot;,&quot;Mauritius&quot;,&quot;Mexico&quot;,&quot;Moldova&quot;,&quot;Mongolia&quot;,&quot;Montenegro&quot;,&quot;Morocco&quot;,&quot;Mozambique&quot;,&quot;Myanmar&quot;,&quot;Namibia&quot;,&quot;Nepal&quot;,&quot;Netherlands&quot;,&quot;New Zealand&quot;,&quot;Nicaragua&quot;,&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;North Macedonia&quot;,&quot;Norway&quot;,&quot;Oman&quot;,&quot;Pakistan&quot;,&quot;Panama&quot;,&quot;Paraguay&quot;,&quot;Peru&quot;,&quot;Philippines&quot;,&quot;Poland&quot;,&quot;Portugal&quot;,&quot;Puerto Rico&quot;,&quot;Qatar&quot;,&quot;Romania&quot;,&quot;Russian Federation&quot;,&quot;Rwanda&quot;,&quot;Saudi Arabia&quot;,&quot;Senegal&quot;,&quot;Serbia&quot;,&quot;Sierra Leone&quot;,&quot;Singapore&quot;,&quot;Slovak Republic&quot;,&quot;Slovenia&quot;,&quot;Somalia&quot;,&quot;South Africa&quot;,&quot;South Sudan&quot;,&quot;Spain&quot;,&quot;Sri Lanka&quot;,&quot;Sudan&quot;,&quot;Swaziland&quot;,&quot;Sweden&quot;,&quot;Switzerland&quot;,&quot;Syrian Arab Republic&quot;,&quot;Taiwan, China&quot;,&quot;Tajikistan&quot;,&quot;Tanzania&quot;,&quot;Thailand&quot;,&quot;Togo&quot;,&quot;Trinidad and Tobago&quot;,&quot;Tunisia&quot;,&quot;Turkey&quot;,&quot;Turkmenistan&quot;,&quot;Uganda&quot;,&quot;Ukraine&quot;,&quot;United Arab Emirates&quot;,&quot;United Kingdom&quot;,&quot;United States&quot;,&quot;Uruguay&quot;,&quot;Uzbekistan&quot;,&quot;Venezuela, RB&quot;,&quot;Vietnam&quot;,&quot;West Bank and Gaza&quot;,&quot;Yemen, Rep.&quot;,&quot;Zambia&quot;,&quot;Zimbabwe&quot;,&quot;South-eastern Asia&quot;,&quot;Eastern Asia&quot;,&quot;Small island developing states&quot;,&quot;Least developed countries&quot;,&quot;Landlocked developing countries&quot;,&quot;AUS and NZ&quot;,&quot;Eastern Asia and South-eastern Asia&quot;,&quot;Oceania&quot;,&quot;Sub-Saharan Africa (UN)&quot;,&quot;Western Asia and Northern Africa&quot;,&quot;Western Asia&quot;,&quot;Northern Africa&quot;,&quot;Southern Asia&quot;,&quot;Central Asia&quot;,&quot;Latin America and Caribbean (UN)&quot;,&quot;Europe&quot;,&quot;Northern America&quot;,&quot;Northern America and Europe&quot;,&quot;Developing&quot;,&quot;World&quot;,&quot;&quot;]},&quot;title&quot;:&quot;GeoAreaName&quot;},{&quot;name&quot;:&quot;TimePeriod&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;2011&quot;,&quot;2014&quot;,&quot;2017&quot;,&quot;2021&quot;,&quot;&quot;]},&quot;title&quot;:&quot;TimePeriod&quot;},{&quot;name&quot;:&quot;Source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;The World Bank (2021), Global Findex Database (https://www.worldbank.org/en/publication/globalfindex)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Source&quot;},{&quot;name&quot;:&quot;FootNote&quot;,&quot;type&quot;:&quot;number&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;]},&quot;title&quot;:&quot;FootNote&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15+&quot;,&quot;25+&quot;,&quot;15-24&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Nature&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;G&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Nature&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;BOTHSEX&quot;,&quot;MALE&quot;,&quot;FEMALE&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;PERCENT&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Reporting Type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;G&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Reporting Type&quot;},{&quot;name&quot;:&quot;Type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Country&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type&quot;},{&quot;name&quot;:&quot;ISOalpha3&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;AFG&quot;,&quot;ALB&quot;,&quot;DZA&quot;,&quot;AGO&quot;,&quot;ARG&quot;,&quot;ARM&quot;,&quot;AUS&quot;,&quot;AUT&quot;,&quot;AZE&quot;,&quot;BHR&quot;,&quot;BGD&quot;,&quot;BLR&quot;,&quot;BEL&quot;,&quot;BLZ&quot;,&quot;BEN&quot;,&quot;BTN&quot;,&quot;BOL&quot;,&quot;BIH&quot;,&quot;BWA&quot;,&quot;BRA&quot;,&quot;BGR&quot;,&quot;BFA&quot;,&quot;BDI&quot;,&quot;KHM&quot;,&quot;CMR&quot;,&quot;CAN&quot;,&quot;CAF&quot;,&quot;TCD&quot;,&quot;CHL&quot;,&quot;CHN&quot;,&quot;COL&quot;,&quot;COM&quot;,&quot;COD&quot;,&quot;COG&quot;,&quot;CRI&quot;,&quot;CIV&quot;,&quot;HRV&quot;,&quot;CYP&quot;,&quot;CZE&quot;,&quot;DNK&quot;,&quot;DJI&quot;,&quot;DOM&quot;,&quot;ECU&quot;,&quot;EGY&quot;,&quot;SLV&quot;,&quot;EST&quot;,&quot;ETH&quot;,&quot;FIN&quot;,&quot;FRA&quot;,&quot;GAB&quot;,&quot;GMB&quot;,&quot;GEO&quot;,&quot;DEU&quot;,&quot;GHA&quot;,&quot;GRC&quot;,&quot;GTM&quot;,&quot;GIN&quot;,&quot;HTI&quot;,&quot;HND&quot;,&quot;HKG&quot;,&quot;HUN&quot;,&quot;ISL&quot;,&quot;IND&quot;,&quot;IDN&quot;,&quot;IRN&quot;,&quot;IRQ&quot;,&quot;IRL&quot;,&quot;ISR&quot;,&quot;ITA&quot;,&quot;JAM&quot;,&quot;JPN&quot;,&quot;JOR&quot;,&quot;KAZ&quot;,&quot;KEN&quot;,&quot;KOR&quot;,&quot;XKX&quot;,&quot;KWT&quot;,&quot;KGZ&quot;,&quot;LAO&quot;,&quot;LVA&quot;,&quot;LBN&quot;,&quot;LSO&quot;,&quot;LBR&quot;,&quot;LBY&quot;,&quot;LTU&quot;,&quot;LUX&quot;,&quot;MDG&quot;,&quot;MWI&quot;,&quot;MYS&quot;,&quot;MDV&quot;,&quot;MLI&quot;,&quot;MLT&quot;,&quot;MRT&quot;,&quot;MUS&quot;,&quot;MEX&quot;,&quot;MDA&quot;,&quot;MNG&quot;,&quot;MNE&quot;,&quot;MAR&quot;,&quot;MOZ&quot;,&quot;MMR&quot;,&quot;NAM&quot;,&quot;NPL&quot;,&quot;NLD&quot;,&quot;NZL&quot;,&quot;NIC&quot;,&quot;NER&quot;,&quot;NGA&quot;,&quot;MKD&quot;,&quot;NOR&quot;,&quot;OMN&quot;,&quot;PAK&quot;,&quot;PAN&quot;,&quot;PRY&quot;,&quot;PER&quot;,&quot;PHL&quot;,&quot;POL&quot;,&quot;PRT&quot;,&quot;PRI&quot;,&quot;QAT&quot;,&quot;ROU&quot;,&quot;RUS&quot;,&quot;RWA&quot;,&quot;SAU&quot;,&quot;SEN&quot;,&quot;SRB&quot;,&quot;SLE&quot;,&quot;SGP&quot;,&quot;SVK&quot;,&quot;SVN&quot;,&quot;SOM&quot;,&quot;ZAF&quot;,&quot;SSD&quot;,&quot;ESP&quot;,&quot;LKA&quot;,&quot;SDN&quot;,&quot;SWZ&quot;,&quot;SWE&quot;,&quot;CHE&quot;,&quot;SYR&quot;,&quot;TWN&quot;,&quot;TJK&quot;,&quot;TZA&quot;,&quot;THA&quot;,&quot;TGO&quot;,&quot;TTO&quot;,&quot;TUN&quot;,&quot;TUR&quot;,&quot;TKM&quot;,&quot;UGA&quot;,&quot;UKR&quot;,&quot;ARE&quot;,&quot;GBR&quot;,&quot;USA&quot;,&quot;URY&quot;,&quot;UZB&quot;,&quot;VEN&quot;,&quot;VNM&quot;,&quot;PSE&quot;,&quot;YEM&quot;,&quot;ZMB&quot;,&quot;ZWE&quot;,&quot;&quot;]},&quot;title&quot;:&quot;ISOalpha3&quot;},{&quot;name&quot;:&quot;SeriesCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;FB_BNK_ACCSS&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SeriesCode&quot;},{&quot;name&quot;:&quot;series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;ts_account&quot;,&quot;ts_account_edu_prim&quot;,&quot;ts_account_edu_secd_above&quot;,&quot;ts_account_in_lf&quot;,&quot;ts_account_men&quot;,&quot;ts_account_old&quot;,&quot;ts_account_out_lf&quot;,&quot;ts_account_poor40&quot;,&quot;ts_account_rich60&quot;,&quot;ts_account_rural&quot;,&quot;ts_account_urban&quot;,&quot;ts_account_women&quot;,&quot;ts_account_young&quot;,&quot;&quot;]},&quot;title&quot;:&quot;series&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorías</h4>
+    <p>Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/site/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://sikaushi.github.io/data/es/data/8-10-2.csv" class="btn btn-primary btn-download" download='indicator_8-10-2.csv' tabindex='0' role='button'>Descargar datos de origen (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descargar los datos de origen para los desgloses (.csv)</p>
+
+    
+    <h3>No hay datos principales disponibles</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/site/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Para la alternativa de datos en forma de tabla, véase la pestaña Tabla.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Gráfico</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabla</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        map
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-mapview"
+          data-bs-target="#mapview"
+          aria-controls="mapview"
+          data-no-disagg="true"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+
+        
+      >Mapa</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Advertencia:</span></i>
+      Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unidad de medida:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Nota:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Datos actualizados por última vez:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descargar la imagen del gráfico como PNG"
+          aria-label="Descargar la imagen del gráfico como PNG"
+          class='btn btn-primary btn-download'>
+          Descargar la imagen del gráfico (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Pulse para ordenar por esta columna</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unidad de medida:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Nota:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Datos actualizados por última vez:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
+          
+<h4 id="map-heading" class="map-title">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/site/assets/img/loading.gif" alt="Cargando mapa" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unidad de medida:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Nota:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Datos actualizados por última vez:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -526,7 +877,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane active" id="national">
             <article>
-                <p>Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de Australia más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de Australian, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de Australian.</p>
+                <p>Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de World Bank más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de World Bank, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de World Bank.</p>
 
                 <table class="table metadata-content">
   <tbody>
@@ -1148,6 +1499,15 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
 
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/torfsen/leaflet.zoomhome@master/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -1164,12 +1524,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20221130225010'></script>
+<script src='/site/assets/js/sdg.js?v=20221208153135'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20221130225010"></script><script>
+    <script src="/site/assets/js/custom.js?v=20221208153135"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
